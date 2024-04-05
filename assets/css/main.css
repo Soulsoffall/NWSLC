@@ -1,0 +1,126 @@
+:root{
+    --backgroundO: #5F666E;
+    --backgroundI: #98748C;
+    --shadeDarker33: #00000033;
+    --shadeDarker50: #00000050;
+    --shadeDarker66: #00000066;
+    --shadeLighter10: #ffffff10;
+    --shadeLighter20: #ffffff20;
+    --shadeLighter33: #ffffff33;
+
+    --color1:#66A1ED;
+    --color2:#76ED66;
+
+    --color3:#ED66C0;
+    --color4:#EAA627;
+
+    --light-gold-rgb: 249 181 51;
+    --dark-gold-rgb: 215 147 23;
+
+    font-family: Arial, Helvetica, sans-serif;    
+}
+@font-face {
+    font-family: 'bit';
+    src: url('fonts/slkscr.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    -webkit-font-smoothing : none;
+    font-synthesis-weight: none;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+*, *:before, *:after {
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+  }
+  
+  .blank-one {
+    background: url(images/tumblr_5d37ab2aa782462c7aa092f7bd0d27cb_fe094893_1280.webp) center center no-repeat fixed;
+    text-align: center;
+    background-size: cover;
+      /* IE, only works on <img> tags */
+  -ms-interpolation-mode: nearest-neighbor;
+  /* Firefox */
+  image-rendering: crisp-edges;
+  /* Chromium + Safari */
+  image-rendering: pixelated;
+  }
+  
+  .blank-two {
+    background: url(images/tumblr_a98bc710b6f5bc7aebb47b3049d7adf8_a05c21c6_1280.webp) center center no-repeat fixed;
+    text-align: center;
+    background-size: cover;
+          /* IE, only works on <img> tags */
+  -ms-interpolation-mode: nearest-neighbor;
+  /* Firefox */
+  image-rendering: crisp-edges;
+  /* Chromium + Safari */
+  image-rendering: pixelated;
+  }
+  
+  .blank-three {
+    background: url(images/tumblr_7e646d701b09619cbd7847b65ea580f0_163e290a_1280.webp) center center no-repeat fixed;
+    text-align: center;
+    background-size: cover;
+      /* IE, only works on <img> tags */
+      -ms-interpolation-mode: nearest-neighbor;
+      /* Firefox */
+      image-rendering: crisp-edges;
+      /* Chromium + Safari */
+      image-rendering: pixelated;
+  }
+  
+  .text {
+    width: 700px;
+    margin: auto;
+    line-height: 1.9em;
+    background: radial-gradient(rgb(var(--light-gold-rgb)), rgb(var(--dark-gold-rgb)));    
+    border-radius: 30px;
+
+    border: none;
+    outline: 0.2rem solid white;
+    outline-offset: 0.2rem;
+    box-shadow: 12px 25px 50px 12px rgb(0 0 0 / 0.5);  
+    max-width: 75ch;
+    word-spacing: 1ch;
+    word-break: keep-all;
+}
+  
+  h2 {
+    font-size: 4em;
+    line-height: 100vh;
+    font-family: 'bit', serif;
+    -webkit-font-smoothing : none;
+    font-synthesis-weight: none;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000, 0 0 100px #000, 0 0 50px #000, 0px 0px 150px #000;
+  }
+  
+  p {
+    font-size: 24px;
+    padding: 60px;
+    color: #fff;
+  }
+
+  .pattern {
+    background: transparent url(images/gaming-pattern-dark.png) repeat 50% 0;
+    animation: infinite-shift-left 5000s linear;
+    height: 100%;
+
+}
+  
+  @keyframes infinite-shift-left {
+    0% {
+      background-position: 50000px;
+    }
+    100% {
+      background-position: 0;
+    }
+  }
