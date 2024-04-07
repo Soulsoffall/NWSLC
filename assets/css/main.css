@@ -1,64 +1,74 @@
-:root{
-    --backgroundO: #5F666E;
-    --backgroundI: #98748C;
-    --shadeDarker33: #00000033;
-    --shadeDarker50: #00000050;
-    --shadeDarker66: #00000066;
-    --shadeLighter10: #ffffff10;
-    --shadeLighter20: #ffffff20;
-    --shadeLighter33: #ffffff33;
+:root {
+  --backgroundO: #5F666E;
+  --backgroundI: #98748C;
+  --shadeDarker33: #00000033;
+  --shadeDarker50: #00000050;
+  --shadeDarker66: #00000066;
+  --shadeLighter10: #ffffff10;
+  --shadeLighter20: #ffffff20;
+  --shadeLighter33: #ffffff33;
 
-    --color1:#66A1ED;
-    --color2:#76ED66;
+  --color1: #66A1ED;
+  --color2: #76ED66;
 
-    --color3:#ED66C0;
-    --color4:#EAA627;
+  --color3: #ED66C0;
+  --color4: #EAA627;
 
-    --light-gold-rgb: 249 181 51;
-    --dark-gold-rgb: 215 147 23;
+  --light-gold-rgb: 249 181 51;
+  --dark-gold-rgb: 215 147 23;
 
-    font-family: Arial, Helvetica, sans-serif;    
+  font-family: Arial, Helvetica, sans-serif;
+
 }
+
 @font-face {
-    font-family: 'bit';
-    src: url('fonts/slkscr.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    -webkit-font-smoothing : none;
-    font-synthesis-weight: none;
+  font-family: 'bit';
+  src: url('fonts/slkscr.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: none;
+  font-synthesis-weight: none;
 }
-body{
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
-*, *:before, *:after {
-    -moz-box-sizing: border-box; 
-    -webkit-box-sizing: border-box; 
-    box-sizing: border-box;
-  }
-  
-  .blank-one {
-    background: url(images/tumblr_5d37ab2aa782462c7aa092f7bd0d27cb_fe094893_1280.webp) center center no-repeat fixed;
-    text-align: center;
-    background-size: cover;
-      /* IE, only works on <img> tags */
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.blank-one {
+  background: url(images/tumblr_5d37ab2aa782462c7aa092f7bd0d27cb_fe094893_1280.webp) center center no-repeat fixed;
+  text-align: center;
+  background-size: cover;
+  /* IE, only works on <img> tags */
   -ms-interpolation-mode: nearest-neighbor;
   /* Firefox */
   image-rendering: crisp-edges;
   /* Chromium + Safari */
   image-rendering: pixelated;
   min-height: 100%;
-  }
-  
-  .blank-two {
-    background: url(images/tumblr_a98bc710b6f5bc7aebb47b3049d7adf8_a05c21c6_1280.webp) center center no-repeat fixed;
-    text-align: center;
-    background-size: cover;
-          /* IE, only works on <img> tags */
+}
+
+.blank-two {
+  background: url(images/tumblr_a98bc710b6f5bc7aebb47b3049d7adf8_a05c21c6_1280.webp) center center no-repeat fixed;
+  text-align: center;
+  background-size: cover;
+  /* IE, only works on <img> tags */
   -ms-interpolation-mode: nearest-neighbor;
   /* Firefox */
   image-rendering: crisp-edges;
@@ -66,119 +76,214 @@ body{
   image-rendering: pixelated;
   min-height: 100%;
 
-  }
-  
-  .blank-three {
-    background: url(images/tumblr_7e646d701b09619cbd7847b65ea580f0_163e290a_1280.webp) center center no-repeat fixed;
-    text-align: center;
-    background-size: cover;
-      /* IE, only works on <img> tags */
-      -ms-interpolation-mode: nearest-neighbor;
-      /* Firefox */
-      image-rendering: crisp-edges;
-      /* Chromium + Safari */
-      image-rendering: pixelated;
-      min-height: 100%;
-
-  }
-  
-  .text {
-    width: 700px;
-    margin: auto;
-    line-height: 1.9em;
-    background: radial-gradient(rgb(var(--light-gold-rgb)), rgb(var(--dark-gold-rgb)));    
-    border-radius: 30px;
-
-    border: none;
-    outline: 0.2rem solid white;
-    outline-offset: 0.2rem;
-    box-shadow: 12px 25px 50px 12px rgb(0 0 0 / 0.5);  
-    max-width: 75ch;
-    word-break: keep-all;
 }
-  
-  h2 {
-    font-size: 3em;
-    font-family: Arial, Helvetica, sans-serif;
-    -webkit-font-smoothing : none;
-    font-synthesis-weight: none;
 
-    color: #fff;
-    text-shadow: 1px 1px 2px #000, 0 0 100px #000, 0px 0px 150px #000;
-
-    margin-top: 0;
-    text-align: left;
-    padding: 64px 0 0 64px;
-    vertical-align: top;
-    line-height: 1em;
-
-  }
-  h3 {
-    font-size: 1.5em;
-    font-family: Arial, Helvetica, sans-serif;
-    -webkit-font-smoothing : none;
-    font-synthesis-weight: none;
-
-    color: #fff;
-    text-shadow: 1px 1px 2px #000, 0 0 100px #000, 0px 0px 150px #000;
-
-    margin-top: 0;
-    text-align: left;
-    padding: 0 0 0 64px;
-    vertical-align: top;
-    line-height: 1em;
-
-  }
-  .content{
-    color: #fff;
-    margin: 128px;
-    backdrop-filter: blur(32px);
-    border-radius: 30px;
-    height: fit-content;
-    padding: 64px;
-    text-align: left;
-    max-width: 75ch;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.6em;
-    font-size: 1em;
-  }
-  
-  .boxContent {
-    font-size: 24px;
-    padding: 60px;
-    color: #fff;
-  }
-
-  .pattern {
-    background: transparent url(images/gaming-pattern-dark.png) repeat 50% 0;
-    animation: infinite-shift-left 5000s linear;
-    height: 100%;
+.blank-three {
+  background: url(images/tumblr_7e646d701b09619cbd7847b65ea580f0_163e290a_1280.webp) center center no-repeat fixed;
+  text-align: center;
+  background-size: cover;
+  /* IE, only works on <img> tags */
+  -ms-interpolation-mode: nearest-neighbor;
+  /* Firefox */
+  image-rendering: crisp-edges;
+  /* Chromium + Safari */
+  image-rendering: pixelated;
+  min-height: 100%;
 
 }
-  
-  @keyframes infinite-shift-left {
-    0% {
-      background-position: 50000px;
-    }
-    100% {
-      background-position: 0;
-    }
+
+.text {
+  width: 700px;
+  margin: auto;
+  line-height: 1.9em;
+  background: radial-gradient(rgb(var(--light-gold-rgb)), rgb(var(--dark-gold-rgb)));
+  border-radius: 30px;
+
+  border: none;
+  outline: 0.2rem solid white;
+  outline-offset: 0.2rem;
+  box-shadow: 12px 25px 50px 12px rgb(0 0 0 / 0.5);
+  max-width: 75ch;
+  word-break: keep-all;
+}
+
+h2 {
+  font-size: 3em;
+  font-family: fantasy;
+  -webkit-font-smoothing: none;
+  font-synthesis-weight: none;
+
+  color: #fff;
+  text-shadow: 1px 1px 2px #000, 0 0 100px #000, 0px 0px 150px #000;
+
+  margin-top: 0;
+  text-align: left;
+  padding: 64px 0 0 64px;
+  vertical-align: top;
+  line-height: 1em;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-family: fantasy;
+  -webkit-font-smoothing: none;
+  font-synthesis-weight: none;
+
+  color: #fff;
+  text-shadow: 1px 1px 2px #000, 0 0 100px #000, 0px 0px 150px #000;
+
+  margin-top: 0;
+  text-align: left;
+  padding: 0 0 0 64px;
+  vertical-align: top;
+  line-height: 1em;
+
+}
+
+.content {
+  color: #fff;
+  margin: 128px;
+  backdrop-filter: blur(32px);
+  border-radius: 30px;
+  height: fit-content;
+  padding: 64px;
+  text-align: left;
+  max-width: 75ch;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6em;
+  font-size: 1em;
+}
+
+.boxContent {
+  font-size: 24px;
+  padding: 60px;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000, 0 0 100px #000, 0px 0px 150px #000;
+
+}
+
+.pattern {
+  background: transparent url(images/gaming-pattern-dark.png) repeat 50% 0;
+  animation: infinite-shift-left 5000s linear;
+  height: 100%;
+
+}
+
+@keyframes infinite-shift-left {
+  0% {
+    background-position: 50000px;
   }
-  .wrapper {
-      width: 100vw;
-      height: 100vh;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+
+  100% {
+    background-position: 0;
   }
-  .item {
-    z-index: 1;
-    position: relative;
-    width: 50%;
-    background: #00000000;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    transition: 0.3s ease;
-    height: 100%;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+  z-index: 1;
+  position: relative;
+  width: 50%;
+  background: #00000000;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  transition: 0.3s ease;
+  height: 100%;
+}
+
+.mainMenu {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 80%) 0%, rgba(0, 0, 0, 0) 100%), url(images/tumblr_5d37ab2aa782462c7aa092f7bd0d27cb_fe094893_1280.webp) center center no-repeat fixed;
+  text-align: center;
+  background-size: cover;
+  /* IE, only works on <img> tags */
+  -ms-interpolation-mode: nearest-neighbor;
+  /* Firefox */
+  image-rendering: crisp-edges;
+  /* Chromium + Safari */
+  image-rendering: pixelated;
+  min-height: 100%;
+  text-transform: uppercase;
+
+  backdrop-filter: blur(5px);
+}
+
+.initSpace {
+  padding-top: 22.5%;
+  padding-left: 7.5%;
+  line-height: 1em;
+}
+
+.button {
+  width: 16rem;
+  padding: 0.85rem;
+  position: relative;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 0.75rem;
+  outline: 0.2rem solid white;
+  outline-offset: 0.2rem;
+  overflow: hidden;
+  background-color: #00000033;
+  transition: ease 0.3s;
+  backdrop-filter: blur(32px);
+  align-items: start;
+}
+
+a>h3 {
+  margin: auto;
+  text-transform: uppercase;
+  padding: inherit;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: var(--color2);
+  transition: ease 0.3s;
+
+}
+
+.selectable {
+  font-family: fantasy;
+  position: relative;
+  font-size: 2em;
+  border: none;
+  font-weight: 900;
+  background-color: #00000000;
+  transition: ease 0.3s;
+  align-items: start;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0%;
+  text-decoration: none;
+  text-shadow: none;
+  line-height: 1em;
+}
+
+.selectable:hover {
+  transition: ease 0.3s;
+  text-shadow: 0 0 10px #fff;
+  font-size: 2em;
+}
+
+.spacer {
+  padding-top: 1em;
+}
+
+.mainMenu::before {
+  content: "";
+  z-index: -1;
+  backdrop-filter: blur(32px);
+  mask: linear-gradient(90deg, rgba(0, 0, 0, 100%) 0%, rgba(0, 0, 0, 0) 100%);
+  position: absolute;
+  inset: 0;
+  height: 100%;
 }
