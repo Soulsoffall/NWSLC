@@ -115,7 +115,7 @@ h2 {
 
   color: #fff;
   text-shadow: 1px 1px 2px #000, 0 0 100px #000, 0px 0px 150px #000;
-
+  text-transform: uppercase;
   margin-top: 0;
   text-align: left;
   padding: 64px 0 0 64px;
@@ -127,6 +127,8 @@ h2 {
 h3 {
   font-size: 1.5em;
   font-family: fantasy;
+  text-transform: uppercase;
+
   -webkit-font-smoothing: none;
   font-synthesis-weight: none;
 
@@ -143,24 +145,26 @@ h3 {
 
 .content {
   color: #fff;
-  margin: 128px;
-  backdrop-filter: blur(32px);
+  margin: 32px;
   border-radius: 30px;
   height: fit-content;
-  padding: 64px;
+  padding: 64px 16px 64px 16px;
+
   text-align: left;
-  max-width: 75ch;
+  max-width:60ch;
+  min-width: 60ch;
   margin-left: auto;
   margin-right: auto;
-  line-height: 1.6em;
-  font-size: 1em;
+  line-height: 1.2em;
+  font-size: 1.2em;
+
 }
 
 .boxContent {
   font-size: 24px;
   padding: 60px;
   color: #fff;
-  text-shadow: 1px 1px 2px #000, 0 0 100px #000, 0px 0px 150px #000;
+  text-shadow: 1px 1px 2px #000, 0 0 100px #000;
 
 }
 
@@ -212,8 +216,8 @@ h3 {
   image-rendering: pixelated;
   min-height: 100%;
   text-transform: uppercase;
-
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
 }
 
 .initSpace {
@@ -234,6 +238,7 @@ h3 {
   overflow: hidden;
   background-color: #00000033;
   transition: ease 0.3s;
+  -webkit-backdrop-filter: blur(32px);
   backdrop-filter: blur(32px);
   align-items: start;
 }
@@ -282,6 +287,7 @@ a>h3 {
   content: "";
   z-index: -1;
   backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
   mask: linear-gradient(90deg, rgba(0, 0, 0, 100%) 0%, rgba(0, 0, 0, 0) 100%);
   position: absolute;
   inset: 0;
