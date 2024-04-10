@@ -340,10 +340,10 @@ a>h3 {
 }
 
 .card {
-  max-width: 300px;
+  max-width: 600px;
   width: 100%;
   display: grid;
-  grid-template-rows: 300px 200px;
+  grid-template-rows: 300px 150px;
   grid-template-areas:
     "image"
     "text";
@@ -351,8 +351,8 @@ a>h3 {
   text-align: center;
   transition: 0.3s ease;
   cursor: pointer;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
   margin-top: 30px;
   margin-bottom: 30px;
   color: #fff;
@@ -381,7 +381,6 @@ a>h3 {
   grid-area: text;
   overflow: hidden;
   padding: 10px;
-  margin-top: auto;
   margin-bottom: auto;
   font-size: 1.2em;
   line-height: 1.2em;
@@ -392,6 +391,8 @@ a>h3 {
   background: url(images/004339.png);
   background-size: cover;
   background-position-x: center;
+  margin: 16px;
+    border-radius: 20px;
 }
 
 .card-image2 {
@@ -399,6 +400,8 @@ a>h3 {
   background: url(images/004330.png);
   background-size: cover;
   background-position-x: center;
+  margin: 16px;
+    border-radius: 20px;
 }
 
 .card-image3 {
@@ -406,6 +409,8 @@ a>h3 {
   background: url(images/004319.png);
   background-size: cover;
   background-position-x: center;
+  margin: 16px;
+    border-radius: 20px;
 }
 
 .grass {
