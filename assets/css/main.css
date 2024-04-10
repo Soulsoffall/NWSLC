@@ -30,6 +30,14 @@
   -webkit-font-smoothing: none;
   font-synthesis-weight: none;
 }
+@font-face {
+  font-family: 'timeless';
+  src: url('fonts/Timeless.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: none;
+  font-synthesis-weight: none;
+}
 
 body {
   width: 100vw;
@@ -146,14 +154,16 @@ h3 {
   line-height: 1em;
 
 }
-
+h4{
+  font-family: bit;
+  font-size: 1.2em;
+}
 .content {
   color: #fff;
   margin: 32px;
   border-radius: 30px;
   height: fit-content;
-  padding: 64px 16px 64px 16px;
-
+  font-family: Timeless;
   text-align: left;
   max-width: max(75ch,calc(100% / 3));
   min-width: min(60ch,calc(100% / 3));
