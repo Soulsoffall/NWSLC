@@ -396,6 +396,8 @@ a>h3 {
   margin-bottom: auto;
   font-size: 1.2em;
   line-height: 1.2em;
+  text-shadow: 1px 1px 2px #000, 0 0 20px #00000025;
+
 }
 
 .card-image1 {
