@@ -186,8 +186,7 @@ h4{
   height: 100%;
   font-family: Timeless;
   text-align: left;
-  padding-top: 64px;
-  max-width: max(60ch,calc(100% / 3));
+  max-width: max(65ch,calc(100% / 3));
   min-width: min(60ch,calc(100% / 3));
   padding-left: 16px;
   padding-right: 16px;
@@ -335,7 +334,7 @@ a>h3 {
 }
 
 .container {
-  padding: 64px 0;
+  padding: 32px 0;
   height: 80%;
   display: flex;
   margin-left: auto;
