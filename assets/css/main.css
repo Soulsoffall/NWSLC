@@ -155,7 +155,9 @@ h3 {
   padding: 64px 16px 64px 16px;
 
   text-align: left;
-  max-width: 60ch;
+  max-width: max(75ch,calc(100% / 3));
+  min-width: min(60ch,calc(100% / 3));
+
   margin-left: auto;
   margin-right: auto;
   line-height: 1.2em;
