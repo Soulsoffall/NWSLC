@@ -167,12 +167,13 @@ h4{
   text-align: left;
   max-width: max(75ch,calc(100% / 3));
   min-width: min(60ch,calc(100% / 3));
-
+padding-left: 16px;
+padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
   line-height: 1.2em;
   font-size: 1.2em;
-
+  letter-spacing: 0.05em;
 }
 
 .boxContent {
