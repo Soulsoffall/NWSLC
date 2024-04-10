@@ -5,16 +5,22 @@
 
   <link rel="stylesheet" href="assets/css/main.css">
   <script>
-    $(function(){
-        $("#footerContainer").load("footer.html");
-
-    });
-</script>
+    var source = "assets/audio/WaldenFlimmern.mp3"
+    var audio = document.createElement("audio");
+    //
+    audio.autoplay = true;
+    //
+    audio.load()
+    audio.addEventListener("load", function() {
+      audio.play();
+    }, true);
+    audio.src = source;
+  </script>
 </head>
 
 <body>
   <header id="headerContainer" class="header"></header>
-  
+
   <div class="mainMenu">
     <h2 style="padding-top: 320px;
       padding-left: 256px;

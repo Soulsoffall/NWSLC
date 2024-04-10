@@ -5,6 +5,19 @@
   <meta meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" href="assets/css/main.css">
 
+  <script>
+    var source = "audio/burger.mp3"
+    var audio = document.createElement("audio");
+    //
+    audio.autoplay = true;
+    //
+    audio.load()
+    audio.addEventListener("load", function () {
+      audio.play();
+    }, true);
+    audio.src = source;
+  </script>
+
 </head>
 
 <body>

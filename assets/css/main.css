@@ -51,6 +51,7 @@ body {
 * {
   scroll-behavior: smooth;
 }
+
 .blank-one {
   background: url(images/tumblr_bfe90ef1addacef577bc2813d1cfd001_5434e620_1280.webp) center center no-repeat fixed;
   text-align: center;
@@ -153,7 +154,7 @@ h3 {
   padding: 64px 16px 64px 16px;
 
   text-align: left;
-  max-width:60ch;
+  max-width: 60ch;
   margin-left: auto;
   margin-right: auto;
   line-height: 1.2em;
@@ -294,7 +295,8 @@ a>h3 {
   inset: 0;
   height: 100%;
 }
-.container{
+
+.container {
   padding: 64px 0;
   height: 80%;
   display: flex;
@@ -304,10 +306,11 @@ a>h3 {
   z-index: 3;
   position: relative;
   max-width: calc(65ch* 3);
-  
+
 }
-.backerL{
-  mask: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,80%) 25%, rgba(0,0,0,80%) 75%, rgba(0,0,0,0) 100%);
+
+.backerL {
+  mask: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 80%) 25%, rgba(0, 0, 0, 80%) 75%, rgba(0, 0, 0, 0) 100%);
   background-color: #00000099;
 
   content: "";
@@ -315,8 +318,9 @@ a>h3 {
   height: 100%;
   position: absolute;
 }
-.backerR{
-  mask: radial-gradient(circle, rgba(0,0,0,100%) 0%, rgba(0,0,0,80%) 33%, rgba(0,0,0,0) 80%);
+
+.backerR {
+  mask: radial-gradient(circle, rgba(0, 0, 0, 100%) 0%, rgba(0, 0, 0, 80%) 33%, rgba(0, 0, 0, 0) 80%);
   background-color: #00000099;
 
   content: "";
@@ -326,19 +330,21 @@ a>h3 {
   z-index: 0;
 
 }
+
 .cardContainer {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .card {
   max-width: 300px;
   width: 100%;
   display: grid;
   grid-template-rows: 300px 200px;
   grid-template-areas:
-      "image"
-      "text";
+    "image"
+    "text";
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-align: center;
   transition: 0.3s ease;
@@ -359,7 +365,8 @@ a>h3 {
   outline: 0.25rem solid white;
   outline-offset: 0.5rem;
 }
-.card:hover{
+
+.card:hover {
   transform: scale(1.1);
   filter: saturate(1);
   transition: ease 0.3s;
@@ -367,6 +374,7 @@ a>h3 {
   outline: 0.5rem solid white;
   outline-offset: 0.5rem;
 }
+
 .card-text {
   grid-area: text;
   overflow: hidden;
@@ -376,25 +384,29 @@ a>h3 {
   font-size: 1.2em;
   line-height: 1.2em;
 }
+
 .card-image1 {
   grid-area: image;
   background: url(images/004339.png);
   background-size: cover;
   background-position-x: center;
 }
+
 .card-image2 {
   grid-area: image;
   background: url(images/004330.png);
   background-size: cover;
   background-position-x: center;
 }
+
 .card-image3 {
   grid-area: image;
   background: url(images/004319.png);
   background-size: cover;
   background-position-x: center;
 }
-.grass{
+
+.grass {
   background: transparent url(images/grass2.png) repeat-x;
   filter: hue-rotate(349deg) saturate(1.2) brightness(0.2);
 
@@ -403,15 +415,16 @@ a>h3 {
   width: 100%;
   content: "";
   position: absolute;
-    /* IE, only works on <img> tags */
-    -ms-interpolation-mode: nearest-neighbor;
-    /* Firefox */
-    image-rendering: crisp-edges;
-    /* Chromium + Safari */
-    image-rendering: pixelated;
-    transform: translateY(calc(100vh - 128px));
+  /* IE, only works on <img> tags */
+  -ms-interpolation-mode: nearest-neighbor;
+  /* Firefox */
+  image-rendering: crisp-edges;
+  /* Chromium + Safari */
+  image-rendering: pixelated;
+  transform: translateY(calc(100vh - 128px));
 }
-.grass2{
+
+.grass2 {
   background: transparent url(images/grass2.png) repeat-x;
   filter: hue-rotate(336deg) brightness(0.4);
   background-size: contain;
@@ -419,16 +432,17 @@ a>h3 {
   width: 100%;
   content: "";
   position: absolute;
-    /* IE, only works on <img> tags */
-    -ms-interpolation-mode: nearest-neighbor;
-    /* Firefox */
-    image-rendering: crisp-edges;
-    /* Chromium + Safari */
-    image-rendering: pixelated;
-    transform: translateY(calc(200vh - 128px));
-    
+  /* IE, only works on <img> tags */
+  -ms-interpolation-mode: nearest-neighbor;
+  /* Firefox */
+  image-rendering: crisp-edges;
+  /* Chromium + Safari */
+  image-rendering: pixelated;
+  transform: translateY(calc(200vh - 128px));
+
 }
-.grass3{
+
+.grass3 {
   background: transparent url(images/grass2.png) repeat-x;
   filter: hue-rotate(255deg) saturate(2) brightness(0.6);
   background-size: contain;
@@ -436,15 +450,16 @@ a>h3 {
   width: 100%;
   content: "";
   position: absolute;
-    /* IE, only works on <img> tags */
-    -ms-interpolation-mode: nearest-neighbor;
-    /* Firefox */
-    image-rendering: crisp-edges;
-    /* Chromium + Safari */
-    image-rendering: pixelated;
-    transform: translateY(calc(300vh - 128px));
+  /* IE, only works on <img> tags */
+  -ms-interpolation-mode: nearest-neighbor;
+  /* Firefox */
+  image-rendering: crisp-edges;
+  /* Chromium + Safari */
+  image-rendering: pixelated;
+  transform: translateY(calc(300vh - 128px));
 }
-.grass4{
+
+.grass4 {
   background: transparent url(images/grass2.png) repeat-x;
   filter: hue-rotate(112deg) saturate(1.4) brightness(0.15);
   background-size: contain;
@@ -452,11 +467,11 @@ a>h3 {
   width: 100%;
   content: "";
   position: absolute;
-    /* IE, only works on <img> tags */
-    -ms-interpolation-mode: nearest-neighbor;
-    /* Firefox */
-    image-rendering: crisp-edges;
-    /* Chromium + Safari */
-    image-rendering: pixelated;
-    transform: translateY(calc(400vh - 128px));
+  /* IE, only works on <img> tags */
+  -ms-interpolation-mode: nearest-neighbor;
+  /* Firefox */
+  image-rendering: crisp-edges;
+  /* Chromium + Safari */
+  image-rendering: pixelated;
+  transform: translateY(calc(400vh - 128px));
 }
