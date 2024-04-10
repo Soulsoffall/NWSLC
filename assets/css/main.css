@@ -383,3 +383,69 @@ a>h3 {
   background-size: cover;
   background-position-x: center;
 }
+.grass{
+  background: transparent url(images/grass2.png) repeat-x;
+  filter: hue-rotate(349deg) saturate(1.2) brightness(0.2);
+
+  background-size: contain;
+  height: 128px;
+  width: 100%;
+  content: "";
+  position: absolute;
+    /* IE, only works on <img> tags */
+    -ms-interpolation-mode: nearest-neighbor;
+    /* Firefox */
+    image-rendering: crisp-edges;
+    /* Chromium + Safari */
+    image-rendering: pixelated;
+    transform: translateY(calc(100vh - 128px));
+}
+.grass2{
+  background: transparent url(images/grass2.png) repeat-x;
+  filter: hue-rotate(336deg) brightness(0.4);
+  background-size: contain;
+  height: 128px;
+  width: 100%;
+  content: "";
+  position: absolute;
+    /* IE, only works on <img> tags */
+    -ms-interpolation-mode: nearest-neighbor;
+    /* Firefox */
+    image-rendering: crisp-edges;
+    /* Chromium + Safari */
+    image-rendering: pixelated;
+    transform: translateY(calc(200vh - 128px));
+    
+}
+.grass3{
+  background: transparent url(images/grass2.png) repeat-x;
+  filter: hue-rotate(255deg) saturate(2) brightness(0.6);
+  background-size: contain;
+  height: 128px;
+  width: 100%;
+  content: "";
+  position: absolute;
+    /* IE, only works on <img> tags */
+    -ms-interpolation-mode: nearest-neighbor;
+    /* Firefox */
+    image-rendering: crisp-edges;
+    /* Chromium + Safari */
+    image-rendering: pixelated;
+    transform: translateY(calc(300vh - 128px));
+}
+.grass4{
+  background: transparent url(images/grass2.png) repeat-x;
+  filter: hue-rotate(112deg) saturate(1.4) brightness(0.15);
+  background-size: contain;
+  height: 128px;
+  width: 100%;
+  content: "";
+  position: absolute;
+    /* IE, only works on <img> tags */
+    -ms-interpolation-mode: nearest-neighbor;
+    /* Firefox */
+    image-rendering: crisp-edges;
+    /* Chromium + Safari */
+    image-rendering: pixelated;
+    transform: translateY(calc(400vh - 128px));
+}

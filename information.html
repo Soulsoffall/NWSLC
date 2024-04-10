@@ -4,44 +4,45 @@
   <script type="text/javascript" src="assets/js/jquery.js"></script>
 
   <link rel="stylesheet" href="assets/css/main.css">
+  <script>
+    $(function(){
+        $("#footerContainer").load("footer.html");
 
+    });
+</script>
 </head>
 
 <body>
+  <header id="headerContainer" class="header"></header>
+  
   <div class="mainMenu">
-      <h2 style="padding-top: 320px;
+    <h2 style="padding-top: 320px;
       padding-left: 256px;
       font-weight: 100;">Chapter Select</h2>
-      <div class="spacer"></div>
-      <section class="cardContainer">
-        <div class="card" onclick="window.location='#blank-one';">
-            <div class="card-image1"></div>
-            <div class="card-text">
-                <h4>Introduction</h4>
-            </div>
+    <div class="spacer"></div>
+    <section class="cardContainer">
+      <div class="card" onclick="window.location='#blank-one';">
+        <div class="card-image1"></div>
+        <div class="card-text">
+          <h4>Introduction</h4>
         </div>
-        <div class="card" onclick="window.location='#blank-two';">
-            <div class="card-image2"></div>
-            <div class="card-text">
-                <h4>Equipment and Additional Costs</h4>
-            </div>
+      </div>
+      <div class="card" onclick="window.location='#blank-two';">
+        <div class="card-image2"></div>
+        <div class="card-text">
+          <h4>Equipment and Additional Costs</h4>
         </div>
-        <div class="card" onclick="window.location='#blank-three';">
-            <div class="card-image3"></div>
-            <div class="card-text">
-                <h4>Safeguarding</h4>
-            </div>
+      </div>
+      <div class="card" onclick="window.location='#blank-three';">
+        <div class="card-image3"></div>
+        <div class="card-text">
+          <h4>Safeguarding</h4>
+        </div>
     </section>
-    </div>
+  </div>
 
   </div>
-  <div class="pattern">
-    <div class="text">
-      <p class="boxContent">
-        Welcome!
-      </p>
-    </div>
-  </div>
+  <div class="grass"></div>
   <div id="blank-one" class="blank-one">
     <div class="backerR"></div>
     <h2>Introduction</h2>
@@ -50,7 +51,7 @@
 
       <p class="content">
         Course Overview:
-        <br/>
+        <br />
         Our Games design course it tailored to the meet the requirements of the modern games industry. Providing
         students
         the best diverse skill set to ensure their success! Here some key areas covered within the course:
@@ -96,19 +97,7 @@
     </div>
 
   </div>
-
-  <div class="pattern">
-    <div class="text">
-      <p class="boxContent">
-        North Warwickshire and south Leicestershire College:
-        South Wigston, Hinkley Road, Nuneaton, CV11 6SF
-        <br />
-        Email: feedback@nwslc.ac.uk
-        <br />
-        Telephone:0330 058 3000
-      </p>
-    </div>
-  </div>
+  <div class="grass2"></div>
 
   <div id="blank-two" class="blank-two">
     <div class="backerR"></div>
@@ -156,11 +145,7 @@
     </div>
   </div>
 
-  <div class="pattern">
-    <div class="text">
-      <p class="boxContent">Email: enquiries@nwslc.ac.uk</p>
-    </div>
-  </div>
+  <div class="grass3"></div>
 
   <div id="blank-three" class="blank-three">
     <div class="backerL"></div>
@@ -247,6 +232,7 @@
     </div>
 
   </div>
+  <div class="grass4"></div>
 
   <div class="pattern">
     <div class="text">
@@ -261,19 +247,32 @@
         Phone: 024 76243089
         <br />
         Mobile: 07946 381029
-        <br/>
-        <br/>
+        <br />
+        <br />
         Andy Howarth - DDSL
-        <br/>
+        <br />
         Mobile: 07946 381703
-        <br/>
-        <br/>
+        <br />
+        <br />
         Lindsay Parker - DDSL
-        <br/>
+        <br />
         Mobile: 07970 521354
-          
-        
+
+
       </p>
+    </div>
+    <div class="text">
+      <p class="boxContent">
+        North Warwickshire and south Leicestershire College:
+        South Wigston, Hinkley Road, Nuneaton, CV11 6SF
+        <br />
+        Email: feedback@nwslc.ac.uk
+        <br />
+        Telephone:0330 058 3000
+      </p>
+    </div>
+    <div class="text">
+      <p class="boxContent">Email: enquiries@nwslc.ac.uk</p>
     </div>
   </div>
 </body>
