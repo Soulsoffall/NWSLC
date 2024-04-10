@@ -10,10 +10,10 @@
     var audio = document.createElement("audio");
     //
     audio.autoplay = true;
+    audio.volume = 0.5;
     //
     audio.load()
     audio.addEventListener("load", function() {
-      audio.volume = 0.5;
       audio.play();
     }, true);
     audio.src = source;
