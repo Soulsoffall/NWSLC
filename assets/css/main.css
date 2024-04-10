@@ -207,9 +207,9 @@ h4{
 }
 
 .pattern {
-  background: transparent url(images/gaming-pattern-dark.png) repeat 50% 0;
+  background: transparent url(images/gaming-pattern-dark.png) repeat;
   animation: infinite-shift-left 5000s linear;
-  height: 100%;
+  height: fit-content;
 
 }
 
