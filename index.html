@@ -6,13 +6,14 @@
   <link rel="stylesheet" href="assets/css/main.css">
 
   <script>
-    var source = "audio/burger.mp3"
+    var source = "assets/audio/ambience.mp3"
     var audio = document.createElement("audio");
     //
     audio.autoplay = true;
     //
     audio.load()
-    audio.addEventListener("load", function () {
+    audio.addEventListener("load", function() {
+      audio.volume = 0.5;
       audio.play();
     }, true);
     audio.src = source;
