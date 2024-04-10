@@ -5,18 +5,13 @@
 
   <link rel="stylesheet" href="assets/css/main.css">
   <script>
-    var source = "assets/audio/WaldenFlimmern.mp3"
-    var audio = document.createElement("audio");
-    //
-    audio.autoplay = true;
-    audio.volume = 0.33;
-    audio.loop = true;
-    //
-    audio.load()
-    audio.addEventListener("load", function() {
+    document.addEventListener('click', musicPlay);
+    function musicPlay() {
+      var audio = document.getElementById("backgroundSound");
+      audio.volume = 0.33;
       audio.play();
-    }, true);
-    audio.src = source;
+      document.removeEventListener('click', musicPlay);
+    }
   </script>
 </head>
 
@@ -24,6 +19,8 @@
   <header id="headerContainer" class="header"></header>
 
   <div class="mainMenu">
+    <audio id="backgroundSound" src="assets/audio/WaldenFlimmern.mp3" type="audio/mpeg" autoplay loop></audio>
+
     <h2 style="padding-top: 320px;
       padding-left: 256px;
       font-weight: 100;">Chapter Select</h2>

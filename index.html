@@ -6,24 +6,20 @@
   <link rel="stylesheet" href="assets/css/main.css">
 
   <script>
-    var source = "assets/audio/ambience.mp3"
-    var audio = document.createElement("audio");
-    //
-    audio.autoplay = true;
-    audio.volume = 0.5;
-    audio.loop = true;
-    //
-    audio.load()
-    audio.addEventListener("load", function() {
+    document.addEventListener('click', musicPlay);
+    function musicPlay() {
+      var audio = document.getElementById("backgroundSound");
+      audio.volume = 0.5;
       audio.play();
-    }, true);
-    audio.src = source;
+      document.removeEventListener('click', musicPlay);
+    }
   </script>
 
 </head>
 
 <body>
   <div class="mainMenu">
+    <audio id="backgroundSound" src="assets/audio/ambience.mp3" type="audio/mpeg" autoplay loop volume="0.2"></audio>
     <div class="initSpace">
       <h2>NWSLC Level 2 Games Design</h2>
       <div class="spacer"></div>
