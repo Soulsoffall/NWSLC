@@ -291,12 +291,14 @@ a>h3 {
   text-decoration: none;
   text-shadow: none;
   line-height: 1em;
+  width: fit-content;
 }
 
 .selectable:hover {
   transition: ease 0.3s;
   text-shadow: 0 0 10px #fff;
   font-size: 2em;
+  cursor:pointer;
 }
 
 .spacer {
