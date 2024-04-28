@@ -298,11 +298,9 @@ a>h3 {
   font-size: 2em;
   cursor:pointer;
 }
-
 .spacer {
   padding-top: 1em;
 }
-
 .container {
   display: block;
   margin: 0;
@@ -322,8 +320,8 @@ a>h3 {
   min-width: 90%;
   max-width: 90%;
   width: 100%;
-  padding-top: 10%;
-  padding-bottom: 15%;
+  padding-top: 64px;
+  padding-bottom: 128px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -334,7 +332,7 @@ a>h3 {
   max-width: 90%;
   width: 100%;
   padding-top: 42px;
-  padding-bottom: 5%;
+  padding-bottom: 192px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -347,6 +345,10 @@ a>h3 {
   overflow: auto;
   max-height: 80%;
 
+}
+.buttonContainer{
+  display: flex;
+  justify-content: space-around;
 }
 .cardContainer {
   display: flex;
